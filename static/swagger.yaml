@@ -1,0 +1,51 @@
+swagger: "2.0"
+info:
+  description: "This is the API documentation for the Book API."
+  version: "1.0.0"
+  title: "Book API"
+host: "localhost:80"
+basePath: "/"
+tags:
+  - name: "book"
+    description: "Operations related to books"
+schemes:
+  - "http"
+paths:
+  /api/books:
+    post:
+      tags:
+        - "book"
+      summary: "Create a new book"
+      description: ""
+      consumes:
+        - "application/json"
+      produces:
+        - "application/json"
+      parameters:
+        - in: "body"
+          name: "body"
+          description: "Book object that needs to be added"
+          required: true
+          schema:
+            type: "object"
+            properties:
+              title:
+                type: "string"
+              author:
+                type: "string"
+              year:
+                type: "integer"
+      responses:
+        201:
+          description: "Book created successfully"
+          schema:
+            type: "object"
+            properties:
+              title:
+                type: "string"
+              author:
+                type: "string"
+              year:
+                type: "integer"
+        500:
+          description: "Error creating book"

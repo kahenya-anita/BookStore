@@ -27,3 +27,105 @@ INFO:werkzeug: * Restarting with stat
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 844-444-777
 INFO:root:created new book: <Book Test Book, Test Author>
+INFO:werkzeug: * Detected change in '/Users/anitakahenya/Documents/Bookstore/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.100.7:80
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 844-444-777
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:35:04] "[32mGET /swagger HTTP/1.1[0m" 308 -
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:35:04] "GET /swagger/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:35:04] "GET /swagger/swagger-ui.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:35:04] "GET /swagger/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:35:04] "GET /swagger/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:35:04] "GET /swagger/swagger-ui-bundle.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:35:05] "[33mGET /static/swagger.yaml HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:35:05] "GET /swagger/favicon-32x32.png HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.100.7:80
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 844-444-777
+ERROR:root:Error creating book: (sqlite3.OperationalError) no such table: book
+[SQL: INSERT INTO book (title, author, year) VALUES (?, ?, ?)]
+[parameters: ('Enemy of the people', 'Chinua Achebe', 2005)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:38:19] "[35m[1mPOST /api/books HTTP/1.1[0m" 500 -
+ERROR:root:Error creating book: (sqlite3.OperationalError) no such table: book
+[SQL: INSERT INTO book (title, author, year) VALUES (?, ?, ?)]
+[parameters: ('Enemy of the people', 'Chinua Achebe', 2005)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:38:26] "[35m[1mPOST /api/books HTTP/1.1[0m" 500 -
+ERROR:root:Error creating book: (sqlite3.OperationalError) no such table: book
+[SQL: INSERT INTO book (title, author, year) VALUES (?, ?, ?)]
+[parameters: ('Enemy of the people', 'Chinua Achebe', 2005)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:38:27] "[35m[1mPOST /api/books HTTP/1.1[0m" 500 -
+ERROR:root:Error creating book: (sqlite3.OperationalError) no such table: book
+[SQL: INSERT INTO book (title, author, year) VALUES (?, ?, ?)]
+[parameters: ('Enemy of the people', 'Chinua Achebe', 2005)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:38:42] "[35m[1mPOST /api/books HTTP/1.1[0m" 500 -
+ERROR:root:Error creating book: (sqlite3.OperationalError) no such table: book
+[SQL: INSERT INTO book (title, author, year) VALUES (?, ?, ?)]
+[parameters: ('Enemy of the people', 'Chinua Achebe', 2005)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:39:04] "[35m[1mPOST /api/books HTTP/1.1[0m" 500 -
+INFO:root:created new book: <Book Enemy of the people, Chinua Achebe>
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:40:01] "[35m[1mPOST /api/books HTTP/1.1[0m" 201 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.100.7:80
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 844-444-777
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:40:24] "GET /swagger/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:40:24] "[36mGET /swagger/swagger-ui.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:40:24] "[36mGET /swagger/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:40:24] "[36mGET /swagger/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:40:25] "[36mGET /swagger/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:40:26] "GET /static/swagger.yaml HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/anitakahenya/Documents/Bookstore/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.100.7:80
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 844-444-777
+INFO:werkzeug: * Detected change in '/Users/anitakahenya/Documents/Bookstore/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 844-444-777
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:44:44] "GET /swagger/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:44:44] "[36mGET /swagger/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:44:44] "[36mGET /swagger/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:44:44] "[36mGET /swagger/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:44:44] "[36mGET /swagger/swagger-ui.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:44:44] "[36mGET /static/swagger.yaml HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:44:44] "[36mGET /swagger/favicon-32x32.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:45:00] "[33mGET /apidocs HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:45:05] "GET /swagger/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:45:06] "[36mGET /swagger/swagger-ui.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:45:06] "[36mGET /swagger/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:45:06] "[36mGET /swagger/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:45:06] "[36mGET /swagger/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:45:06] "[36mGET /static/swagger.yaml HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:46:53] "GET /swagger/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:46:53] "[36mGET /swagger/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:46:53] "[36mGET /swagger/swagger-ui.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:46:53] "[36mGET /swagger/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:46:53] "[36mGET /swagger/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:46:53] "GET /static/swagger.yaml HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:46:53] "[36mGET /swagger/favicon-32x32.png HTTP/1.1[0m" 304 -
