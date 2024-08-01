@@ -1,0 +1,55 @@
+name: CI linting
+
+# Trigger action on Git Push or Pull Request
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  pull-requests: write
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.x
+      uses: actions/setup-python@v3
+      with:
+        python-version: '3.x'
+    - name: Install dependencies
+      run: |
+        python3 -m pip install --upgrade pip
+        pip install flake8
+        pip install -r requirements.txt
+    - name: Lint with flake8
+      run: |
+        # Lint Python files in the root directory and tests directory
+        flake8 app.py tests --count --select=E9,F63,F7,F82 --show-source --statistics
+        # Exit with zero status for all errors
+        flake8 app.py tests --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+
+  test:
+    needs: [build]
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.x
+      uses: actions/setup-python@v3
+      with:
+        python-version: '3.x'
+    - name: Display Python version
+      run: python -c "import sys; print(sys.version)"
+    - name: Install dependencies
+      run: |
+        python3 -m pip install --upgrade pip
+        pip install pytest
+        pip install -r requirements.txt
+    - name: Test with pytest
+      run: |
+        python -m unittest tests/test.py -v

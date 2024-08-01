@@ -1,0 +1,29 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.100.7:80
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 844-444-777
+INFO:root:created new book: <Book Ego is the Enemy, Ryan Holiday>
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:02:14] "[35m[1mPOST /api/books HTTP/1.1[0m" 201 -
+INFO:werkzeug: * Detected change in '/Users/anitakahenya/Documents/Bookstore/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 844-444-777
+INFO:root:created new book: <Book Ego is the Enemy, Ryan Holiday>
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2024 10:03:27] "[35m[1mPOST /api/books HTTP/1.1[0m" 201 -
+INFO:werkzeug: * Detected change in '/Users/anitakahenya/Documents/Bookstore/tests/test.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 844-444-777
+INFO:werkzeug: * Detected change in '/Users/anitakahenya/Documents/Bookstore/tests/test.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 844-444-777
+INFO:werkzeug: * Detected change in '/Users/anitakahenya/Documents/Bookstore/tests/test.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 844-444-777
+INFO:root:created new book: <Book Test Book, Test Author>
